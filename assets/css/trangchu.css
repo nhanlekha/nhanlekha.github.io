@@ -381,6 +381,7 @@ a,li{
 }
 .fromlogin-overlay ,.fromsignup-overlay, .nav-overlay{
     position: fixed;
+    z-index: 995;
     top: 0;
     right: 0;
     bottom: 0;
