@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link REL="SHORTCUT ICON" href="assets/iconlogo/testhuhu.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/gioithieunhanqua.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <title>Giới thiệu nhận quà</title>
+</head>
+<body>
+    <div class="load">
+        <img src="assets/img/loader.gif" alt="">
+    </div>
+    <div class="banner">
+        <div class="backgroud_banner">
+            <div>
+                <nav class="navbar">
+
+                    <div class="navbar-logo">
+                        <a class="navbar-item-link" href="trangchu.html"> <img style="width: 130px; height: 45px;object-fit: cover;"
+                                src="assets/iconlogo/logo.png" alt=""> </a>
+                    </div>
+
+                    <ul class="navbar-list .navbar-list--left">
+                        <li class="navbar-item">
+                            <a class="navbar-item-link" href="">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                            <a class="navbar-item-link" href="trangchu.html"><span>Trang Chủ</span></a>
+                        </li>
+                        <li id="quatang" class="navbar-item">
+                            <a class="navbar-item-link" href=""><span>Quà Tặng</span></a>
+                        </li>
+                        <li id="thele" class="navbar-item">
+                            <a class="navbar-item-link" href=""><span>Thể Lệ Chương Trình</span></a>
+                        </li>
+                        <li id="bangxephang" class="navbar-item">
+                            <a class="navbar-item-link" href=""><span>Bảng Xếp Hạng</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-list navbar-list--right">
+                        <li class="navbar-item">
+                            <a class="navbar-item-link" href="">
+                                <i class="fa-solid fa-gift"></i>
+                            </a>
+                            <a class="navbar-item-link" href="">
+                                Giới Thiệu Nhận Quà
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-item-link" href="">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a class="navbar-item-link" href="">
+                                19001009
+                            </a>
+                        </li>
+                        <li class="navbar-item ">
+                            <label style="cursor: pointer;" for="Notification-input" class="navbar-item-link">
+                                <i class="fa-solid fa-bell"></i>
+                            </label>
+                        </li>
+                        <label for="nav-login-logout" class="navbar-item">
+                            <label for="nav-login-logout" class="navbar-item-link">
+                                <i class="fa-solid fa-user"></i>
+                            </label>
+                            <label for="nav-login-logout" class="navbar-item-link">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </label>
+                        </label>
+                        <li class="navbar-item ">
+                            <label style="cursor: pointer;" for="nav-input" class="navbar-item-link">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <input type="checkbox" hidden class="Notification-input-select" name="" id="Notification-input">
+                    <label class="nooverlay-Notification" for="Notification-input">
+                    </label>
+                    <label for="Notification-input" class="Notification">
+                        <div class="Notification-img">
+                            <img src="assets/img/trangchu/icon_notification_empty.svg" alt="">
+                        </div>
+                        <div class="Notification-text">
+                            <span>Không có thông báo nào!</span>
+                        </div>
+                    </label>
+
+                    <input type="checkbox" hidden class="nav-login-logout-select" name="" id="nav-login-logout">
+                    <label class="nooverlay-login-logout" for="nav-login-logout">
+                    </label>
+                    <div class="nav-login-logout">
+                        <div class="nav-login-logout-box">
+                            <label for="input-fromlogin" class="nav-login-logout-box-item">
+                                <span class="nav-login-logout-box-text">Đăng Nhập</span>
+                            </label>
+                            <label for="input-fromsignup" class="nav-login-logout-box-item">
+                                <span class="nav-login-logout-box-text">Đăng Ký</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" hidden class="input-fromlogin-select" name="" id="input-fromlogin">
+                    <label for="input-fromlogin" class="fromlogin-overlay">
+                    </label>
+                    <form class="fromlogin" action="">
+                        <label for="input-fromlogin" class="fromlogin-close">
+                            <span> <i class="fa-solid fa-xmark"></i></span>
+                        </label>
+                        <div class="fromlogin-box">
+                            <div class="fromlogin-title">
+                                <label for=""><span>Đăng nhập</span></label>
+                            </div>
+                            <div class="fromlogin-item">
+                                <div class="fromlogin-item-logo">
+                                    <!-- <i class="fa-brands fa-facebook"></i> -->
+                                    <img width="30px" height="30px" style="object-fit: cover;margin-left: -4px;"
+                                        src="assets/img/trangchu/fb-login-icon.png" alt="">
+                                </div>
+                                <div class="fromlogin-item-text">
+                                    <span style="margin-left: -3px;">Đăng nhập bằng facebook</span>
+                                </div>
+                            </div>
+                            <div class="fromlogin-item">
+                                <div class="fromlogin-item-logo">
+                                    <!-- <i class="fa-brands fa-google"></i> -->
+                                    <img width="24px" height="24px" style="object-fit: cover;"
+                                        src="assets/img/trangchu/gg-login-icon.png" alt="">
+                                </div>
+                                <div class="fromlogin-item-text">
+                                    <span>Đăng nhập bằng Google</span>
+                                </div>
+                            </div>
+                            <div class="fromlogin-text">
+                                <span>Hoặc đăng nhập bằng số điện thoại, email</span>
+                            </div>
+                            <div class="fromlogin-item-input-box">
+                                <input class="fromlogin-item-input" type="text" name="email" required>
+                                <label class="fromlogin-item-lable" for="">Tài khoản</label>
+                            </div>
+                            <div style="margin-top: 20px;" class="fromlogin-item-input-box">
+                                <input class="fromlogin-item-input" type="password" name="password" required>
+                                <label class="fromlogin-item-lable" for="">Mật khẩu</label>
+                            </div>
+                            <input class="fromlogin-btn" type="submit" value="Đăng nhập" id="btn-login">
+                            <div class="fromlogin-restore">
+                                <span>Khôi phục mật khẩu</span>
+                            </div>
+                            <div class="fromlogin-end">
+                                <span>Chưa có tài khoản?</span>
+                                <span style="color: #00b6f3;">Đăng ký tài khoản</span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <input class="input-fromsignup-select" hidden type="checkbox" name="" id="input-fromsignup">
+                    <label for="input-fromsignup" class="fromsignup-overlay">
+                    </label>
+                    <form class="fromsignup" action="">
+                        <label for="input-fromsignup" class="fromsignup-close">
+                            <span> <i class="fa-solid fa-xmark"></i></span>
+                        </label>
+                        <div class="fromsignup-box">
+                            <div class="fromsignup-title">
+                                <label for=""><span>Đăng ký</span></label>
+                            </div>
+                            <div class="fromsignup-item">
+                                <div class="fromsignup-item-logo">
+                                    <!-- <i class="fa-brands fa-facebook"></i> -->
+                                    <img width="30px" height="30px" style="object-fit: cover;margin-left: -4px;"
+                                        src="assets/img/trangchu/fb-login-icon.png" alt="">
+                                </div>
+                                <div class="fromsignup-item-text">
+                                    <span style="margin-left: -3px;">Đăng ký bằng facebook</span>
+                                </div>
+                            </div>
+                            <div class="fromsignup-item">
+                                <div class="fromsignup-item-logo">
+                                    <!-- <i class="fa-brands fa-google"></i> -->
+                                    <img width="24px" height="24px" style="object-fit: cover;"
+                                        src="assets/img/trangchu/gg-login-icon.png" alt="">
+                                </div>
+                                <div class="fromsignup-item-text">
+                                    <span>Đăng ký bằng Google</span>
+                                </div>
+                            </div>
+                            <div class="fromsignup-text">
+                                <span>Hoặc ký bằng số điện thoại</span>
+                            </div>
+                            <div class="fromsignup-item-input-box">
+                                <input class="fromsignup-item-input" type="text" name="email" required>
+                                <label class="fromsignup-item-lable" for="">Nhập số điện thoại</label>
+                            </div>
+                            <input class="fromsignup-btn" type="submit" value="Đăng ký" id="btn-signup">
+                            <div style="padding: 16px 0;" class="fromsignup-end">
+                                <span>Bạn đã có tài khoản?</span>
+                                <span style="color: #00b6f3;">Đăng nhập</span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <input type="checkbox" hidden class="nav-input-select" name="" id="nav-input">
+                    <label for="nav-input" class="nav-overlay">
+                    </label>
+                    <div class="nav-menu">
+                        <div class="nav-menu-box">
+                            <label for="nav-input" class="nav-menu-close">
+                                <i class="nav-menu-close fa-solid fa-xmark"></i>
+                            </label>
+                            <ul>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-house"></i><span
+                                        class="nav-menu-item-text">Trang Chủ</span></li>
+                                <li class="nav-menu-item nav-menu-item-boder"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-heart"></i><span class="nav-menu-item-text">Yêu Thích</span>
+                                </li>
+                                <li class="nav-menu-item"><i style="color: #ffc043;" class="fa-solid fa-hotel"></i><span
+                                        class="nav-menu-item-text">Khách Sạn</span></li>
+                                <li class="nav-menu-item"><i style="color: #ff2890;" class="fa-solid fa-plane"></i><span
+                                        class="nav-menu-item-text">Vé Máy Bay</span></li>
+                                <li class="nav-menu-item"><i style="color: #ff2890;"
+                                        class="fa-solid fa-hand-holding-heart"></i><span class="nav-menu-item-text">The
+                                        Memories</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-briefcase"></i><span class="nav-menu-item-text">Tour & Sự
+                                        Kiện</span></li>
+                                <li class="nav-menu-item nav-menu-item-boder"><i style="color: #48bb78;"
+                                        class="fa-solid fa-book"></i><span class="nav-menu-item-text">Cẩm Năng Du
+                                        Lịch</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-briefcase"></i><span class="nav-menu-item-text">Tuyển
+                                        Dụng</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-headphones-simple"></i><span class="nav-menu-item-text">Hỗ
+                                        Trợ</span></li>
+                                <li class="nav-menu-item nav-menu-item-boder"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-sack-dollar"></i><span class="nav-menu-item-text">Trở Thành
+                                        Đối Tác Liên Kết</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-handshake"></i><span class="nav-menu-item-text">Hợp Tác Với
+                                        Chúng Tôi</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-mobile"></i><span class="nav-menu-item-text">Tải Ứng Dụng
+                                        MyHotel</span></li>
+                                <li class="nav-menu-item"><i style="color: #00b6f3;"
+                                        class="fa-solid fa-share-nodes"></i><span class="nav-menu-item-text">Giới Thiệu
+                                        Bạn Bè</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <input type="checkbox" name="" hidden class="input_suports_select" id="input_suports">
+                <label for="input_suports" class="suportsone">
+                    <div class="suportsone-layout">
+                        <div class="suportsone-title">
+                            <span>Hỗ Trợ & Tư Vấn</span>
+                        </div>
+                        <div class="suportsone-icon">
+                            <span><i class="fa-solid fa-angle-up"></i></span>
+                        </div>
+                    </div>
+                </label>
+                <div class="suportstwo">
+                    <label for="input_suports" class="suportstwo-top">
+                        <div class="suportstwo-layout">
+                            <div class="suportsone-title">
+                                <span>Hỗ Trợ & Tư Vấn</span>
+                            </div>
+                            <div class="suportsone-icon">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="suportstwo-header">
+                        <div class="suportstwo-header-box">
+                            <div class="suportstwo-header-icon">
+                                <i style="color: #ff3366; font-size: 20px;" class="fa-solid fa-headphones-simple"></i>
+                            </div>
+                            <div class="suportstwo-header-name">
+                                <div class="suportstwo-header-name-top">
+                                    <span>Lê Khả Nhân</span>
+                                </div>
+                                <div class="suportstwo-header-name-bottom">
+                                    <span>Chuyên viên CSKH</span>
+                                </div>
+                            </div>
+                            <div class="suportstwo-header-feel">
+                                <div class="suportstwo-header-feel-like">
+                                    <i class="suportstwo-header-feel-like fa-solid fa-thumbs-up"></i>
+                                </div>
+                                <div class="suportstwo-header-feel-dislike">
+                                    <i class="suportstwo-header-feel-dislike fa-solid fa-thumbs-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suportstwo-content">
+                        <div class="suportstwo-content-img">
+                            <img style="object-fit: cover;" src="assets/img/trangchu/cskh.png" alt="">
+                        </div>
+                        <div class="suportstwo-content-text">
+                            <span>
+                                Xin chào <b>Quý khách!</b> <br>
+                                mình là <b>Lê Khả Nhân</b>, chuyên viên <br>
+                                chăm sóc khách hàng. mình có thể giúp gì <br>
+                                được cho bạn?</span>
+                        </div>
+                    </div>
+                    <div class="suportstwo-end">
+                        <div class="suportstwo-end-box">
+                            <div class="suportstwo-end-box-text">Chát Ngay Bây Giờ!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="giftlist">
+        <div class="giftlist-box">
+            <div class="giftlist-title">
+                <span>Danh sách quà tặng</span>
+            </div>
+            <div class="giftlist-slider owl-carousel owl-theme">
+                <div class="giftlist-card item">
+                    <div class="giftlist-card-icon-left">
+                        
+                    </div>
+                    <div class="giftlist-card-content">
+                        <img width="222px" height="222px" style="border-radius: 8px;object-fit: cover;" src="assets/img/gioithieunhanqua/gift-one.png" alt="">
+                        <div class="huyhieu">
+                            <img width="69px" height="86px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/huy hieu-04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="giftlist-card-icon-right">
+                        
+                    </div>
+                </div>
+                
+                <div class="giftlist-card item">
+                    <div class="giftlist-card-icon-left">
+                        
+                    </div>
+                    <div class="giftlist-card-content">
+                        <div class="huyhieu">
+                            <img width="69px" height="86px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/file-huy-hieu-24.png" alt="">
+                        </div>
+                        <div class="giftlist-card-content-top">
+                            <img src="assets/img/gioithieunhanqua/20.png" alt="">
+                            <div class="giftlist-card-content-top-text">
+                                <span>Miễn phí 2 ngày 2 đêm tại chuỗi khách sạn 5 sao FLC...</span>
+                            </div>
+                        </div>
+                        <div class="giftlist-card-content-bottom">
+                            <img width="222px" height="112px" style="object-fit: cover;border-radius: 0 0 8px 8px;" src="assets/img/gioithieunhanqua/banner-nsct-15.3-01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="giftlist-card-icon-right">
+                        
+                    </div>
+                </div>
+
+                <div class="giftlist-card item">
+                    <div class="giftlist-card-icon-left">
+                        
+                    </div>
+                    <div class="giftlist-card-content">
+                        <div class="huyhieu">
+                            <img width="69px" height="86px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/file-huy-hieu-23.png" alt="">
+                        </div>
+                        <div class="giftlist-card-content-top">
+                            <img src="assets/img/gioithieunhanqua/10.png" alt="">
+                            <div class="giftlist-card-content-top-text">
+                                <span>Miễn phí 2 ngày 2 đêm tại chuỗi khách sạn 5 sao FLC...</span>
+                            </div>
+                        </div>
+                        <div class="giftlist-card-content-bottom">
+                            <img width="222px" height="112px" style="object-fit: cover;border-radius: 0 0 8px 8px;" src="assets/img/gioithieunhanqua/banner-nsct-15.3-01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="giftlist-card-icon-right">
+                        
+                    </div>
+                </div>
+
+                
+                <div class="giftlist-card item">
+                    <div class="giftlist-card-icon-left">
+                        
+                    </div>
+                    <div class="giftlist-card-content">
+                        <div class="huyhieu">
+                            <img width="69px" height="86px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/file-huy-hieu-22.png" alt="">
+                        </div>
+                        <div class="giftlist-card-content-top">
+                            <img src="assets/img/gioithieunhanqua/5.png" alt="">
+                            <div class="giftlist-card-content-top-text">
+                                <span>Ưu đãi 200k cho đơn đặt phòng khách sạn hoặc...</span>
+                            </div>
+                        </div>
+                        <div class="giftlist-card-content-bottom">
+                            <img width="222px" height="112px" style="object-fit: cover;border-radius: 0 0 8px 8px;" src="assets/img/gioithieunhanqua/banner-referal-04-23.png" alt="">
+                        </div>
+                    </div>
+                    <div class="giftlist-card-icon-right">
+                        
+                    </div>
+                </div>
+
+                <div class="giftlist-card">
+                    <div class="giftlist-card-icon-left">
+                        
+                    </div>
+                    <div class="giftlist-card-content">
+                        <div class="huyhieu">
+                            <img width="69px" height="86px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/file-huy-hieu-21.png" alt="">
+                        </div>
+                        <div class="giftlist-card-content-top">
+                            <img src="assets/img/gioithieunhanqua/5.png" alt="">
+                            <div class="giftlist-card-content-top-text">
+                                <span>Ưu đãi 200k cho đơn đặt phòng khách sạn hoặc...</span>
+                            </div>
+                        </div>
+                        <div class="giftlist-card-content-bottom">
+                            <img width="222px" height="112px" style="object-fit: cover;border-radius: 0 0 8px 8px;" src="assets/img/gioithieunhanqua/banner-referal-04-23.png" alt="">
+                        </div>
+                    </div>
+                    <div class="giftlist-card-icon-right">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Joining">
+        <div class="Joining-box">
+            <div class="Joining-box-title">
+                <span>Cách tham gia</span>
+            </div>
+            <div class="Joining-box-layout">
+                <div class="Joining-Card">
+                    <div class="Joining-Card-Img">
+                        <img src="assets/img/gioithieunhanqua/mask-group-4.png" alt="">
+                    </div>
+                    <div class="Joining-Card-Steps">
+                        <b>Bước 1</b>
+                    </div>
+                    <div class="Joining-Card-Text">
+                        <span>Chọn Tài khoản, chọn Giới thiệu bạn bè</span>
+                    </div>
+                </div>
+
+                <div class="Joining-Card">
+                    <div class="Joining-Card-Img">
+                        <img src="assets/img/gioithieunhanqua/group-1707.png" alt="">
+                    </div>
+                    <div class="Joining-Card-Steps">
+                        <b>Bước 2</b>
+                    </div>
+                    <div class="Joining-Card-Text">
+                        <span>Sao chép mã giới thiệu hoặc chia sẻ ngay cho bạn bè qua Facebook, Messenger,...</span>
+                    </div>
+                </div>
+
+                <div class="Joining-Card">
+                    <div class="Joining-Card-Img">
+                        <img height="223px" src="assets/img/gioithieunhanqua/mask-group-5.png" alt="">
+                    </div>
+                    <div class="Joining-Card-Steps">
+                        <b>Bước 3</b>
+                    </div>
+                    <div class="Joining-Card-Text">
+                        <span>Bạn bè nhập mã giới thiệu khi đặt đơn phòng Khách sạn</span>
+                    </div>
+                </div>
+
+                <div class="Joining-Card">
+                    <div class="Joining-Card-Img">
+                        <img src="assets/img/gioithieunhanqua/mask-group-3.png" alt="">
+                    </div>
+                    <div class="Joining-Card-Steps">
+                        <b>Bước 4</b>
+                    </div>
+                    <div class="Joining-Card-Text">
+                        <span>Nhận ưu đãi ngay sau khi bạn bè hoàn thành đặt đơn đầu tiên</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Joining-btn">
+                <span>Xem chi tiết</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="BoxBig-Rank">
+        <div class="Ranked">
+            <div class="Ranked-Box">
+                <div class="Ranked-title">
+                    <span>Bảng xếp hạng Ngôi Sao</span>
+                </div>
+                <div class="Ranked-text">
+                    <span>Danh sách các thành viên có lượt mã giới thiệu được áp dụng nhiều nhất trong tháng</span>
+                </div>
+                <div class="Ranked-huyhieu">
+                    <div class="Ranked-huyhieu-card">
+                        <div class="Ranked-huyhieu-card-img">
+                            <img width="100px" height="115px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/huy-hieu-03.png" alt="">
+                        </div>
+                        <div class="Ranked-huyhieu-card-name">
+                            <span>Lê Khả Nhân</span>
+                        </div>
+                        <div class="Ranked-huyhieu-card-text">
+                            <span>237 lượt</span>
+                        </div>
+                    </div>
+    
+                    <div class="Ranked-huyhieu-card">
+                        <div class="Ranked-huyhieu-card-img">
+                            <img width="100px" height="115px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/huy-hieu-04.png" alt="">
+                        </div>
+                        <div class="Ranked-huyhieu-card-name">
+                            <span>Vĩnh Nguyên 9.1</span>
+                        </div>
+                        <div class="Ranked-huyhieu-card-text">
+                            <span>9911 lượt</span>
+                        </div>
+                    </div>
+    
+                    <div class="Ranked-huyhieu-card">
+                        <div class="Ranked-huyhieu-card-img">
+                            <img width="100px" height="115px" style="object-fit: cover;" src="assets/img/gioithieunhanqua/huy-hieu-05.png" alt="">
+                        </div>
+                        <div class="Ranked-huyhieu-card-name">
+                            <span>Lê Văn Phú</span>
+                        </div>
+                        <div class="Ranked-huyhieu-card-text">
+                            <span>186 lượt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ranked-table">
+            <div class="ranked-table-box">
+                <div class="ranked-table-box-left">
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>4</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Hoàng Thế Khang</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>80 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>5</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Nguyễn Hà Khánh Vi</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>76 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>6</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Đinh Quốc Khiêm</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>72 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>7</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Nguyễn Thị Nhâm</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>66 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>8</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Phạm Quốc Đại</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>58 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>9</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Đỗ Công Vinh</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>53 lượt</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ranked-table-box-right">
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>10</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Nguyễn Hoàng Chương</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>48 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>11</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Đoàn Phan An Khánh</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>43 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>12</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Hoàng Thế Khang</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>37 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>13</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Tạ Thị Thanh Hương</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>35 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>14</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Tống Lê Thái An</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>24 lượt</span>
+                        </div>
+                    </div>
+        
+                    <div class="ranked-table-item">
+                        <div class="ranked-table-item-left">
+                            <div class="ranked-table-item-left-number">
+                                <span>15</span>
+                            </div>
+                            <div class="ranked-table-item-left-name">
+                                <span>Tạ Ngọc Kim Anh</span>
+                            </div>
+                        </div>
+                        <div class="ranked-table-item-right">
+                            <span>20 lượt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="infohotel">
+        <div class="infohotel-box">
+            <div class="infohotel_logo">
+                <img width="185px" height="55px" style="object-fit: cover;" src="assets/iconlogo/logo.png" alt="">
+            </div>
+            <div class="infohotel_content">
+                <div class="infohotel_content_box">
+                    <div class="infohotel_content_title">
+                        Công ty cổ phần du lịch Việt Nam MyHotel
+                    </div>
+                    <div class="infohotel_content_text">
+                        Tổng đài chăm sóc: 1900 1900 <br>
+                        Email: nhanlk@vku.udn.vn <br>
+                        Văn phòng Đà Nẵng: KTX Khu 2, Phòng 210 , Trường Việt Hàn<br>
+                        Văn phòng HCM: Tầng 6, Tòa Nhà Central Park, 117 Nguyễn Du, Q.1 <br>
+                        MyHotel Store: 168 Xã Đàn, Đống Đa, Hà Nội <br>
+                    </div>
+                    <!-- <div class="infohotel_content_check">
+                        <img src="assets/img/logo-dathongbao-bocongthuong-w165.png" alt="">
+                        <img src="assets/img/logo-congthuong-w165.png" alt="">
+                    </div> -->
+                </div>
+                <div class="infohotel_content_box">
+                    <div class="infohotel_content_title">
+                        Chính sách & Quy định
+                    </div>
+                    <div class="infohotel_content_text">
+                        Điều khoản và điều kiện <br>
+                        Quy định về thanh toán <br>
+                        Quy định về xác nhận thông tin đặt phòng <br>
+                        Chính sách về hủy đặt phòng và hoàn trả tiền <br>
+                        Chính sách bảo mật thông tin <br>
+                        Quy chế hoạt động <br>
+                        Quy trình giải quyết tranh chấp, khiếu nại <br>
+                        Điều lệ bay quốc nội <br>
+                    </div>
+                </div>
+                <div class="infohotel_content_box">
+                    <div class="infohotel_content_title">
+                        Khách hàng và đối tác
+                    </div>
+                    <div class="infohotel_content_text">
+                        Đăng nhập HMS <br>
+                        Tuyển dụng <br>
+                        Liên hệ <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                MyHotel là thành viên của VNTravel Group - Một trong những tập đoàn đứng đầu Đông Nam Á về du lịch trực
+                tuyến và các dịch vụ liên quan.
+            </div>
+            <div class="footer-content">
+                <img src="assets/img/icon_company_group.svg" alt="">
+            </div>
+            <div class="footer-content">
+                Copyright © 2022 - ĐỒ ÁN CƠ SỞ WEBSITE HỖ TRỢ TÌM KIẾM KHÁCH SẠN - LÊ KHẢ NHÂN - 21IT218 - WEBSITE ĐƯỢC
+                THIẾT KẾ VÀO 5/2022
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/quatang.js"></script>
+</body>
+</html>

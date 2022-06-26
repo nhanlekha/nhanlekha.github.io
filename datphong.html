@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link REL="SHORTCUT ICON" href="assets/iconlogo/testhuhu.jpg">
+    <link rel="stylesheet" href="assets/css/datphong.css">
+    <title>Đặt Phòng</title>
+</head>
+
+<body class="preloading">
+    <div class="load">
+        <img src="assets/img/loader.gif" alt="">
+    </div>
+    <nav class="navbar ">
+        <div class="navbar-logo">
+            <a class="navbar-item-link" href="trangchu.html"> <img style="width: 130px; height: 45px;object-fit: cover;"
+                    src="assets/iconlogo/logo.png" alt=""> </a>
+        </div>
+        <ul class="navbar-list .navbar-list--left">
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a class="navbar-item-link" href="trangchu.html">Trang Chủ</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="khachsan.html">Khách Sạn</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">Homestay</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">Nhà Hàng</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">Đặc Sản - Myfresh</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">Tour & Sự Kiện</a>
+            </li>
+        </ul>
+        <ul class="navbar-list navbar-list--right">
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">
+                    <i class="fa-solid fa-gift"></i>
+                </a>
+                <a class="navbar-item-link" href="gioithieunhanqua.html">
+                    Giới Thiệu Nhận Quà
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-item-link" href="">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a class="navbar-item-link" href="">
+                    19001009
+                </a>
+            </li>
+            <li class="navbar-item ">
+                <label style="cursor: pointer;" for="Notification-input" class="navbar-item-link">
+                    <i class="fa-solid fa-bell"></i>
+                </label>
+            </li>
+            <label for="nav-login-logout" class="navbar-item">
+                <label for="nav-login-logout" class="navbar-item-link">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <label for="nav-login-logout" class="navbar-item-link">
+                    <i class="fa-solid fa-caret-down"></i>
+                </label>
+            </label>
+            <li class="navbar-item ">
+                <label style="cursor: pointer;" for="nav-input" class="navbar-item-link">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </li>
+        </ul>
+
+        <input type="checkbox" hidden class="Notification-input-select" name="" id="Notification-input">
+        <label class="nooverlay-Notification" for="Notification-input">
+        </label>
+        <label for="Notification-input" class="Notification">
+            <div class="Notification-img">
+                <img src="assets/img/trangchu/icon_notification_empty.svg" alt="">
+            </div>
+            <div class="Notification-text">
+                <span>Không có thông báo nào!</span>
+            </div>
+        </label>
+
+        <input type="checkbox" hidden class="nav-login-logout-select" name="" id="nav-login-logout">
+        <label class="nooverlay-login-logout" for="nav-login-logout">
+        </label>
+        <div class="nav-login-logout">
+            <div class="nav-login-logout-box">
+                <label for="input-fromlogin" class="nav-login-logout-box-item">
+                    <span class="nav-login-logout-box-text">Đăng Nhập</span>
+                </label>
+                <label for="input-fromsignup" class="nav-login-logout-box-item">
+                    <span class="nav-login-logout-box-text">Đăng Ký</span>
+                </label>
+            </div>
+        </div>
+
+        <input type="checkbox" hidden class="input-fromlogin-select" name="" id="input-fromlogin">
+        <label for="input-fromlogin" class="fromlogin-overlay">
+        </label>
+        <form class="fromlogin" action="">
+            <label for="input-fromlogin" class="fromlogin-close">
+                <span> <i class="fa-solid fa-xmark"></i></span>
+            </label>
+            <div class="fromlogin-box">
+                <div class="fromlogin-title">
+                    <label for=""><span>Đăng nhập</span></label>
+                </div>
+                <div class="fromlogin-item">
+                    <div class="fromlogin-item-logo">
+                        <!-- <i class="fa-brands fa-facebook"></i> -->
+                        <img width="30px" height="30px" style="object-fit: cover;margin-left: -4px;"
+                            src="assets/img/trangchu/fb-login-icon.png" alt="">
+                    </div>
+                    <div class="fromlogin-item-text">
+                        <span style="margin-left: -3px;">Đăng nhập bằng facebook</span>
+                    </div>
+                </div>
+                <div class="fromlogin-item">
+                    <div class="fromlogin-item-logo">
+                        <!-- <i class="fa-brands fa-google"></i> -->
+                        <img width="24px" height="24px" style="object-fit: cover;"
+                            src="assets/img/trangchu/gg-login-icon.png" alt="">
+                    </div>
+                    <div class="fromlogin-item-text">
+                        <span>Đăng nhập bằng Google</span>
+                    </div>
+                </div>
+                <div class="fromlogin-text">
+                    <span>Hoặc đăng nhập bằng số điện thoại, email</span>
+                </div>
+                <div class="fromlogin-item-input-box">
+                    <input class="fromlogin-item-input" type="text" name="email" required>
+                    <label class="fromlogin-item-lable" for="">Tài khoản</label>
+                </div>
+                <div style="margin-top: 20px;" class="fromlogin-item-input-box">
+                    <input class="fromlogin-item-input" type="password" name="password" required>
+                    <label class="fromlogin-item-lable" for="">Mật khẩu</label>
+                </div>
+                <input class="fromlogin-btn" type="submit" value="Đăng nhập" id="btn-login">
+                <div class="fromlogin-restore">
+                    <span>Khôi phục mật khẩu</span>
+                </div>
+                <div class="fromlogin-end">
+                    <span>Chưa có tài khoản?</span>
+                    <span style="color: #00b6f3;">Đăng ký tài khoản</span>
+                </div>
+            </div>
+        </form>
+
+        <input class="input-fromsignup-select" hidden type="checkbox" name="" id="input-fromsignup">
+        <label for="input-fromsignup" class="fromsignup-overlay">
+        </label>
+        <form class="fromsignup" action="">
+            <label for="input-fromsignup" class="fromsignup-close">
+                <span> <i class="fa-solid fa-xmark"></i></span>
+            </label>
+            <div class="fromsignup-box">
+                <div class="fromsignup-title">
+                    <label for=""><span>Đăng ký</span></label>
+                </div>
+                <div class="fromsignup-item">
+                    <div class="fromsignup-item-logo">
+                        <!-- <i class="fa-brands fa-facebook"></i> -->
+                        <img width="30px" height="30px" style="object-fit: cover;margin-left: -4px;"
+                            src="assets/img/trangchu/fb-login-icon.png" alt="">
+                    </div>
+                    <div class="fromsignup-item-text">
+                        <span style="margin-left: -3px;">Đăng ký bằng facebook</span>
+                    </div>
+                </div>
+                <div class="fromsignup-item">
+                    <div class="fromsignup-item-logo">
+                        <!-- <i class="fa-brands fa-google"></i> -->
+                        <img width="24px" height="24px" style="object-fit: cover;"
+                            src="assets/img/trangchu/gg-login-icon.png" alt="">
+                    </div>
+                    <div class="fromsignup-item-text">
+                        <span>Đăng ký bằng Google</span>
+                    </div>
+                </div>
+                <div class="fromsignup-text">
+                    <span>Hoặc ký bằng số điện thoại</span>
+                </div>
+                <div class="fromsignup-item-input-box">
+                    <input class="fromsignup-item-input" type="text" name="email" required>
+                    <label class="fromsignup-item-lable" for="">Nhập số điện thoại</label>
+                </div>
+                <input class="fromsignup-btn" type="submit" value="Đăng ký" id="btn-signup">
+                <div style="padding: 16px 0;" class="fromsignup-end">
+                    <span>Bạn đã có tài khoản?</span>
+                    <span style="color: #00b6f3;">Đăng nhập</span>
+                </div>
+            </div>
+        </form>
+
+        <input type="checkbox" hidden class="nav-input-select" name="" id="nav-input">
+        <label for="nav-input" class="nav-overlay">
+        </label>
+        <div class="nav-menu">
+            <div class="nav-menu-box">
+                <label for="nav-input" class="nav-menu-close">
+                    <i class="nav-menu-close fa-solid fa-xmark"></i>
+                </label>
+                <ul>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-house"></i><span
+                            class="nav-menu-item-text">Trang Chủ</span></li>
+                    <li class="nav-menu-item nav-menu-item-boder"><i style="color: #00b6f3;"
+                            class="fa-solid fa-heart"></i><span class="nav-menu-item-text">Yêu Thích</span>
+                    </li>
+                    <li class="nav-menu-item"><i style="color: #ffc043;" class="fa-solid fa-hotel"></i><span
+                            class="nav-menu-item-text">Khách Sạn</span></li>
+                    <li class="nav-menu-item"><i style="color: #ff2890;" class="fa-solid fa-plane"></i><span
+                            class="nav-menu-item-text">Vé Máy Bay</span></li>
+                    <li class="nav-menu-item"><i style="color: #ff2890;"
+                            class="fa-solid fa-hand-holding-heart"></i><span class="nav-menu-item-text">The
+                            Memories</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-briefcase"></i><span
+                            class="nav-menu-item-text">Tour & Sự
+                            Kiện</span></li>
+                    <li class="nav-menu-item nav-menu-item-boder"><i style="color: #48bb78;"
+                            class="fa-solid fa-book"></i><span class="nav-menu-item-text">Cẩm Năng Du
+                            Lịch</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-briefcase"></i><span
+                            class="nav-menu-item-text">Tuyển
+                            Dụng</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-headphones-simple"></i><span
+                            class="nav-menu-item-text">Hỗ
+                            Trợ</span></li>
+                    <li class="nav-menu-item nav-menu-item-boder"><i style="color: #00b6f3;"
+                            class="fa-solid fa-sack-dollar"></i><span class="nav-menu-item-text">Trở Thành
+                            Đối Tác Liên Kết</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-handshake"></i><span
+                            class="nav-menu-item-text">Hợp Tác Với
+                            Chúng Tôi</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-mobile"></i><span
+                            class="nav-menu-item-text">Tải Ứng Dụng
+                            MyHotel</span></li>
+                    <li class="nav-menu-item"><i style="color: #00b6f3;" class="fa-solid fa-share-nodes"></i><span
+                            class="nav-menu-item-text">Giới Thiệu
+                            Bạn Bè</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <input type="checkbox" name="" hidden class="input_suports_select" id="input_suports">
+    <label for="input_suports" class="suportsone">
+        <div class="suportsone-layout">
+            <div class="suportsone-title">
+                <span>Hỗ Trợ & Tư Vấn</span>
+            </div>
+            <div class="suportsone-icon">
+                <span><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+        </div>
+    </label>
+    <div class="suportstwo">
+        <label for="input_suports" class="suportstwo-top">
+            <div class="suportstwo-layout">
+                <div class="suportsone-title">
+                    <span>Hỗ Trợ & Tư Vấn</span>
+                </div>
+                <div class="suportsone-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </label>
+        <div class="suportstwo-header">
+            <div class="suportstwo-header-box">
+                <div class="suportstwo-header-icon">
+                    <i style="color: #ff3366; font-size: 20px;" class="fa-solid fa-headphones-simple"></i>
+                </div>
+                <div class="suportstwo-header-name">
+                    <div class="suportstwo-header-name-top">
+                        <span>Lê Khả Nhân</span>
+                    </div>
+                    <div class="suportstwo-header-name-bottom">
+                        <span>Chuyên viên CSKH</span>
+                    </div>
+                </div>
+                <div class="suportstwo-header-feel">
+                    <div class="suportstwo-header-feel-like">
+                        <i class="suportstwo-header-feel-like fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="suportstwo-header-feel-dislike">
+                        <i class="suportstwo-header-feel-dislike fa-solid fa-thumbs-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="suportstwo-content">
+            <div class="suportstwo-content-img">
+                <img style="object-fit: cover;" src="assets/img/trangchu/cskh.png" alt="">
+            </div>
+            <div class="suportstwo-content-text">
+                <span>
+                    Xin chào <b>Quý khách!</b> <br>
+                    mình là <b>Lê Khả Nhân</b>, chuyên viên <br>
+                    chăm sóc khách hàng. mình có thể giúp gì <br>
+                    được cho bạn?</span>
+            </div>
+        </div>
+        <div class="suportstwo-end">
+            <div class="suportstwo-end-box">
+                <div class="suportstwo-end-box-text">Chát Ngay Bây Giờ!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="contentBox">
+            <div class="contentBox-Left">
+                <div class="contentBox-Left-time">
+                    <i class="fa-solid fa-clock"></i>
+                    <span style="margin-left: 4px;">Thời gian hoàn tất thủ tục thanh toán 15:00</span>
+                </div>
+                <div class="contentBox-Left-Bigcontent">
+                    <div class="contentBox-Left-Bigcontent-img">
+                        <img width="112px" height="112px" style="border-radius: 8px;object-fit: cover;"
+                            src="assets/img/datphong/imgone.jpeg" alt="">
+                    </div>
+                    <div class="contentBox-Left-Bigcontent-Text">
+                        <div class="contentBox-Left-Bigcontent-Text-Title">
+                            <span>Melia Danang Beach Resort</span>
+                        </div>
+                        <div class="contentBox-Left-Bigcontent-Text-Star-Type-Box">
+                            <div class="contentBox-Left-Bigcontent-Text-Star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="contentBox-Left-Bigcontent-Text-Type">
+                                <span>Khu nghỉ dưỡng</span>
+                            </div>
+                        </div>
+                        <div class="contentBox-Left-Bigcontent-Text-place">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span>19, Trường Sa, Quận Ngũ Hành Sơn, Đà Nẵng, Việt Nam</span>
+                        </div>
+                        <div class="contentBox-Left-Bigcontent-Text-DateTime">
+                            <div class="contentBox-Left-Bigcontent-Text-DateTime-Item">
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Top">
+                                    <span>Nhận phòng</span>
+                                </div>
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Bottom">
+                                    <span>16-05-2022</span>
+                                </div>
+                            </div>
+                            <div class="contentBox-Left-Bigcontent-Text-DateTime-Item">
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Top">
+                                    <span>Trả phòng</span>
+                                </div>
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Bottom">
+                                    <span>17-05-2022</span>
+                                </div>
+                            </div>
+                            <div class="contentBox-Left-Bigcontent-Text-DateTime-Item">
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Top">
+                                    <span>Số Đêm</span>
+                                </div>
+                                <div class="contentBox-Left-Bigcontent-Text-DateTime-Item-Bottom">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="form" id="form-2" action="">
+                    <div class="form-title">
+                        <span>Thông Tin Liên Hệ</span>
+                    </div>
+                    <div class="form-login">
+                        <label for="input-fromlogin" style="cursor: pointer;;color: #00b6f3;">
+                            <i class="fa-solid fa-circle-user"></i>
+                            Đăng nhập
+                        </label>
+                        <span style="margin-left: 3px;">để đặt phòng nhanh hơn, không cần nhập thông tin!</span>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <label for="fullname">Họ tên<span style="color: red;">*</span></label>
+                            <input id="fullname" class=" form-input form-input-format" type="text">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="SDT">Số điện thoại<span style="color: red;">*</span></label>
+                            <input id="SDT" class="form-input form-input-format" type="text">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email<span style="color: red;">*</span></label>
+                            <input id="email" class=" form-input form-input-format" type="text">
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="check-btn">
+                        <div>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Tôi đặt phòng cho người khác</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="request">
+                    <div class="request-title">
+                        <span>Yêu cầu đặc biệt</span>
+                    </div>
+                    <div class="request-type">
+                        <span>Chọn loại giường</span>
+                    </div>
+                    <div class="request-type-box">
+                        <div class="request-type-box-item">
+                            <div class="request-type-box-item-input">
+                                <input type="radio" name="" id="">
+                            </div>
+                            <div class="request-type-box-item-icon">
+                                <img width="17px" height="17px" style="object-fit: cover;"
+                                    src="https://img.icons8.com/ios-glyphs/30/undefined/bed.png" />
+                            </div>
+                            <div class="request-type-box-item-lable">
+                                <span>1 Giường đơn</span>
+                            </div>
+                        </div>
+                        <div class="request-type-box-item">
+                            <div class="request-type-box-item-input">
+                                <input type="radio" name="" id="">
+                            </div>
+                            <div class="request-type-box-item-icon">
+                                <img width="17px" height="17px" style="object-fit: cover;"
+                                    src="https://img.icons8.com/ios-glyphs/30/undefined/bed.png" />
+                            </div>
+                            <div class="request-type-box-item-icon">
+                                <img width="17px" height="17px" style="object-fit: cover;"
+                                    src="https://img.icons8.com/ios-glyphs/30/undefined/bed.png" />
+                            </div>
+                            <div class="request-type-box-item-lable">
+                                <span>2 Giường đơn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request-bd">
+                        <div class="request-bd-title">
+                            Yêu cầu đặc biệt
+                        </div>
+                        <div class="request-bd-box">
+                            <div class="request-bd-box-item">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Phòng không hút thuốc</label>
+                                </div>
+                            </div>
+                            <div class="request-bd-box-item">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Phòng ở tầng cao</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="request-rieng-box">
+                            <div class="request-rieng-title">
+                                Yêu cầu riêng của bạn
+                            </div>
+                            <div class="textareabox">
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Nhập yêu cầu khác..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receipt-box">
+                        <div class="receipt-title">
+                            <span>Xuất hóa đơn</span>
+                        </div>
+                        <div class="receipt-text">
+                            <span class="receipt-text">Khi cần xuất hoá đơn GTGT, Quý khách vui lòng gửi yêu cầu đến
+                                MyHotel kể
+                                <div style="margin-left: 10px;">
+                                    từ thời điểm nhận mail đến trước 15h00 ngày hôm sau
+                                </div></span>
+                        </div>
+                        <div class="receipt-box-btn-text">
+                            <div class="receipt-box-btn">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div>
+                                    <span>Yêu cầu xuất hóa đơn</span>
+                                </div>
+                            </div>
+                            <div class="receipt-box-text">
+                                <span style="color: #5dc7eb;">Điều khoản xuất hóa đơn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="codesale">
+                    <div class="codesalebox">
+                        <div class="codesalebox-left">
+                            <div class="codesalebox-left-img">
+                                <img width="36px" height="24px" style="object-fit: cover;"
+                                    src="assets/img/datphong/sale.png" alt="">
+                            </div>
+                            <div class="codesalebox-left-title">
+                                <span>Mã Giảm Giá</span>
+                            </div>
+                        </div>
+                        <div class="codesalebox-right">
+                            <div class="codesalebox-right-img">
+                                <img width="150px" height="36px" style="object-fit: cover;"
+                                    src="assets/img/datphong/chaodanang.png" alt="">
+                            </div>
+                            <div class="codesalebox-right-icon">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Payment">
+                    <div class="Payment-box">
+                        <div class="Payment-box-Title">
+                            <span>Phương thức thanh toán</span>
+                        </div>
+                        <div class="Payment-box-Text">
+                            <span>Sau khi hoàn tất thanh toán, mã xác nhận phòng sẽ được gửi ngay qua SMS và Email của
+                                bạn.</span>
+                        </div>
+                        <div class="Payment-content-box">
+                            <div class="Payment-content-box-left">
+                                <div class="Payment-content-box-left-iconimg">
+                                    <img width="38px" height="32px" style="object-fit: cover;"
+                                        src="assets/img/datphong/icon1.png" alt="">
+                                </div>
+                                <div class="Payment-content-box-left-text">
+                                    <span>Chuyển khoản ngân hàng</span>
+                                </div>
+                            </div>
+                            <div class="Payment-content-box-right">
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Tron1">
+                                    <i class="fa-regular fa-circle"></i>
+                                </div>
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Check1">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Payment-content-box">
+                            <div class="Payment-content-box-left">
+                                <div class="Payment-content-box-left-iconimg">
+                                    <img width="38px" height="32px" style="object-fit: cover;"
+                                        src="assets/img/datphong/icon2.png" alt="">
+                                </div>
+                                <div class="Payment-content-box-left-text">
+                                    <span>Thanh toán QR-Pay</span>
+                                </div>
+                            </div>
+                            <div class="Payment-content-box-right">
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Tron2">
+                                    <i class="fa-regular fa-circle"></i>
+                                </div>
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Check2">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <input hidden class="TheATM-Bank-CheckBox" type="checkbox" name=""
+                            id="Input-TheATM-Bank-CheckBox">
+                        <div class="Payment-content-box">
+                            <div class="Payment-content-box-left">
+                                <div class="Payment-content-box-left-iconimg">
+                                    <img width="38px" height="32px" style="object-fit: cover;"
+                                        src="assets/img/datphong/icon3.png" alt="">
+                                </div>
+                                <div class="Payment-content-box-left-text">
+                                    <span>Thẻ ATM / Tài khoản Ngân Hàng</span>
+                                </div>
+                            </div>
+                            <div class="Payment-content-box-right">
+                                <label for="Input-TheATM-Bank-CheckBox">
+                                    <div class="Input-TheATM-Bank-CheckBox-Icon-Tron3">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </div>
+                                    <div class="Input-TheATM-Bank-CheckBox-Icon-Check3">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="TheATM-Bank">
+                            <div class="TheATM-Bank-Box">
+                                <div class="TheATM-Bank-Title">
+                                    <span>Chọn ngân hàng</span>
+                                </div>
+                                <div class="TheATM-Bank-Layout">
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/vietcombank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/namabank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/ocb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/scb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/ivb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/abbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/shb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/bidv_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/agribank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/sacombank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/acb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/dongabank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/eximbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/tpbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/ncb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/ojb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/hdbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/msbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/vib_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/vccb_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/PVComBank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/saigonbank.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/mbbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/bacabank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/vietinbank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/techcombank_logo.png" alt="">
+                                    </div>
+                                    <div class="TheATM-Bank-Item">
+                                        <img width="94px" height="24px" style="object-fit: cover;"
+                                            src="assets/img/datphong/bank/vpbank_logo.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="TheATM-Bank-Content">
+                                    <div style="margin-top: 15px;" class="TheATM-Bank-Content-Box">
+                                        <div class="TheATM-Bank-Content-Icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="TheATM-Bank-Content-Text">
+                                            <span>Tất cả thông tin thanh toán của bạn được bảo mật</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="TheATM-Bank-Content">
+                                    <div class="TheATM-Bank-Content-Box">
+                                        <div class="TheATM-Bank-Content-Icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="TheATM-Bank-Content-Text">
+                                            <span>Thanh toán an toàn qua cổng VNPay, miễn phí giao dịch.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="TheATM-Bank-Content">
+                                    <div class="TheATM-Bank-Content-Box">
+                                        <div class="TheATM-Bank-Content-Icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="TheATM-Bank-Content-Text">
+                                            <span>Nhận xác nhận ngay qua Email và SMS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Payment-content-box">
+                            <div class="Payment-content-box-left">
+                                <div class="Payment-content-box-left-iconimg">
+                                    <img width="38px" height="32px" style="object-fit: cover;"
+                                        src="assets/img/datphong/icon4.png" alt="">
+                                </div>
+                                <div class="Payment-content-box-left-text">
+                                    <span>Thẻ Visa, Master Card</span>
+                                </div>
+                            </div>
+                            <div class="Payment-content-box-right">
+                                <div id="Input-TheATM-Bank-CheckBox-Icon-Tron4"
+                                    class="Input-TheATM-Bank-CheckBox-Icon-Tron4">
+                                    <i class="fa-regular fa-circle"></i>
+                                </div>
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Check4">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Payment-content-box">
+                            <div class="Payment-content-box-left">
+                                <div class="Payment-content-box-left-iconimg">
+                                    <img width="40px" height="36px" style="object-fit: cover;"
+                                        src="assets/img/datphong/icon5.png" alt="">
+                                </div>
+                                <div class="Payment-content-box-left-text">
+                                    <div class="Payment-content-box-left-text">
+                                        <span>Trả sau, 0% lãi xuất</span>
+                                    </div>
+                                    <div class="Payment-content-box-left-text-150k">
+                                        <span>-150000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Payment-content-box-right">
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Tron5">
+                                    <i class="fa-regular fa-circle"></i>
+                                </div>
+                                <div class="Input-TheATM-Bank-CheckBox-Icon-Check5">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Btn_payment_box">
+                            <a href="bill.html">
+                                <div class="Btn_payment_box-Btn">
+                                    <span>Thanh Toán</span>
+                                </div>
+                            </a>
+                            <div class="Btn_payment_box-Dieukhoan">
+                                <span>Bằng cách nhấn nút Thanh toán, bạn đồng ý với
+                                    <span>Điều kiện và điều khoản</span> của chúng tôi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="contentBox-Right">
+                <div class="contentBox-Right-One">
+                    <div class="contentBox-Right-One-Box">
+                        <div class="contentBox-Right-One-Box_img">
+                            <img width="432px" height="114px" style="border-radius: 8px;object-fit: cover;"
+                                src="assets/img/datphong/imgright.jpg" alt="">
+                        </div>
+                        <div class="contentBox-Right-One-Box_Text">
+                            <div class="contentBox-Right-One-Box_Text-Title">
+                                <span>1x Melia Guest Room</span>
+                            </div>
+                            <div class="contentBox-Right-One-Box_Text-Content">
+                                <div class="contentBox-Right-One-Box_Text-Title-Item">
+                                    <i class="fa-solid fa-user-group"></i>
+                                    <span style="margin-left: 1px;">3 Người</span>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <div style="margin-left: 50px;" class="contentBox-Right-One-Box_Text-Title-Item">
+                                    <i class="fas fa-eye"></i>
+                                    <span style="margin-left: 5px;">Hướng vườn</span>
+                                </div>
+                            </div>
+                            <div class="contentBox-Right-One-Box_Text-Content">
+                                <img width="17px" height="17px" style="object-fit: cover;margin-top: -3px;"
+                                    src="https://img.icons8.com/ios-glyphs/30/undefined/bed.png" />
+                                <span style="margin-left: 5px;">1 giường đơn hoặc 2 giường đơn</span>
+                            </div>
+                            <div class="contentBox-Right-One-Box_Text-Content">
+                                <i class="fa-solid fa-address-card"></i>
+                                <span style="margin-left: 5px;">Hoàn huỷ một phần</span>
+                                <i style="margin-left: 5px;" class="fa-solid fa-circle-exclamation"></i>
+
+                            </div>
+                            <div class="contentBox-Right-One-Box_Text-Content">
+                                <i class="fas fa-kitchen-set"></i>
+                                <span style="margin-left: 5px;">Không bao gồm bữa ăn sáng</span>
+                            </div>
+                            <div class="contentBox-Right-One-Box_Text-Content">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <span style="margin-left: 5px;">Chính sách hành khách và trẻ em</span>
+                            </div>
+                            <div style="color: #48bb78;" class="contentBox-Right-One-Box_Text-Content">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span style="margin-left: 5px;">Xác nhận ngay</span>
+                            </div>
+                        </div>
+                        <div class="contentBox-Right-Two-Box">
+                            <span style="margin-left: 10px;">Đừng bỏ lỡ! Chúng tôi chỉ còn 5 phòng có giá này. Hãy đặt
+                                ngay!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox-Text-Bottom">
+                    <div class="contentBox-Text-Bottom-Box">
+                        <div class="contentBox-Text-Bottom-Box-One">
+                            <div class="contentBox-Text-Bottom-Box-One-Box">
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <span>1 Ngày 1 Đêm</span>
+                                </div>
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Top">
+                                        <span style="margin-left: 17px;">1.406.068đ</span>
+                                    </div>
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Bottom">
+                                        <div class="contentBox-Text-Bottom-Box-One-Item-Bottom-l">
+                                            <span>-5%</span>
+                                        </div>
+                                        <div class="contentBox-Text-Bottom-Box-One-Item-Bottom-r">
+                                            <span>1.466.181đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contentBox-Text-Bottom-Box-One-Box">
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <span>Thuế và phí dịch vụ khách sạn</span>
+                                </div>
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Top">
+                                        <span style="margin-left: 17px;">218.426đ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contentBox-Text-Bottom-Box-One-Box">
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <span>Tổng giá phòng</span>
+                                </div>
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Top">
+                                        <span style="margin-left: 17px;">1.625.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contentBox-Text-Bottom-Box-One-Box">
+                                <div
+                                    class="contentBox-Text-Bottom-Box-One-Item contentBox-Text-Bottom-Box-One-Item-Layout">
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Layout-item">
+                                        <span>Mã giảm giá</span>
+                                    </div>
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Layout-item-Sale">
+                                        <span>CHAODANANG</span>
+                                    </div>
+                                </div>
+                                <div class="contentBox-Text-Bottom-Box-One-Item">
+                                    <div class="contentBox-Text-Bottom-Box-One-Item-Top">
+                                        <span style="color: #68c78f;margin-left: 17px;">-112.485đ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Totalpayment">
+                                <div class="Totalpayment-left">
+                                    <div class="Totalpayment-left-top">
+                                        <span>Tổng tiền thanh toán</span>
+                                    </div>
+                                    <div class="Totalpayment-bottom">
+                                        <span>Đã bao gồm thuế, phí, VAT</span>
+                                    </div>
+                                </div>
+                                <div class="Totalpayment-right">
+                                    <div class="Totalpayment-right-Top">
+                                        <span> 1.512.515đ</span>
+                                    </div>
+                                    <div class="Totalpayment-right-Bottom">
+                                        <span>(Giá cho 2 người lớn)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Content-end">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <span style="margin-left: 5px;">
+                                    Chúc mừng! Bạn đã tiết kiệm được
+                                    112.485đ</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="infohotel">
+        <div class="infohotel_logo">
+            <img width="185px" height="55px" style="object-fit: cover;" src="assets/iconlogo/logo.png" alt="">
+        </div>
+        <div class="infohotel_content">
+            <div class="infohotel_content_box">
+                <div class="infohotel_content_title">
+                    Công ty cổ phần du lịch Việt Nam MyHotel
+                </div>
+                <div class="infohotel_content_text">
+                    Tổng đài chăm sóc: 1900 1900 <br>
+                    Email: nhanlk@vku.udn.vn <br>
+                    Văn phòng Đà Nẵng: KTX Khu 2, Phòng 210 , Trường Việt Hàn<br>
+                    Văn phòng HCM: Tầng 6, Tòa Nhà Central Park, 117 Nguyễn Du, Q.1 <br>
+                    MyHotel Store: 168 Xã Đàn, Đống Đa, Hà Nội <br>
+                </div>
+                <!-- <div class="infohotel_content_check">
+                    <img src="assets/img/logo-dathongbao-bocongthuong-w165.png" alt="">
+                    <img src="assets/img/logo-congthuong-w165.png" alt="">
+                </div> -->
+            </div>
+            <div class="infohotel_content_box">
+                <div class="infohotel_content_title">
+                    Chính sách & Quy định
+                </div>
+                <div class="infohotel_content_text">
+                    Điều khoản và điều kiện <br>
+                    Quy định về thanh toán <br>
+                    Quy định về xác nhận thông tin đặt phòng <br>
+                    Chính sách về hủy đặt phòng và hoàn trả tiền <br>
+                    Chính sách bảo mật thông tin <br>
+                    Quy chế hoạt động <br>
+                    Quy trình giải quyết tranh chấp, khiếu nại <br>
+                    Điều lệ bay quốc nội <br>
+                </div>
+            </div>
+            <div class="infohotel_content_box">
+                <div class="infohotel_content_title">
+                    Khách hàng và đối tác
+                </div>
+                <div class="infohotel_content_text">
+                    Đăng nhập HMS <br>
+                    Tuyển dụng <br>
+                    Liên hệ <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                MyHotel là thành viên của VNTravel Group - Một trong những tập đoàn đứng đầu Đông Nam Á về du lịch trực
+                tuyến và các dịch vụ liên quan.
+            </div>
+            <div class="footer-content">
+                <img src="assets/img/icon_company_group.svg" alt="">
+            </div>
+            <div class="footer-content">
+                Copyright © 2022 - ĐỒ ÁN CƠ SỞ WEBSITE HỖ TRỢ TÌM KIẾM KHÁCH SẠN - LÊ KHẢ NHÂN - 21IT218 - WEBSITE ĐƯỢC
+                THIẾT KẾ VÀO 5/2022
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/datphong.js"></script>
+    
+    <script>
+        Validator({
+            form: '#form-2',
+            errorSelector: '.form-message',
+            rules: [
+            Validator.isRequired('#fullname' , 'Vui lòng nhập tên đầy đủ của bạn'),
+            Validator.isRequired('#email'),
+            Validator.isEmail('#email'),
+            Validator.isRequired('#SDT'),
+            Validator.minLength('#SDT',10,'Định dạng số điện thoại không đúng'),
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
